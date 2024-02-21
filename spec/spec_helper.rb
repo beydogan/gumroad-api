@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "gumroad/client"
+require "gumroad"
 require "vcr"
 require 'webmock'
 require "httparty"
