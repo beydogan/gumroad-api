@@ -21,8 +21,6 @@ Gumroad::Client.access_token = 'your_access_token_here'
 
 ## Usage
 
-#### Listing Products
-
 ```ruby
 products = Gumroad::Product.list
 ```
@@ -34,11 +32,11 @@ See the [Documentation](docs/index.md) for more details.
 Not all endpoints are covered yet. Here is the list of what is covered and what is not:
 
 - [x] Products
-- [ ] Variant Categories
+- [ ] Variant categories
 - [ ] Offer codes
-- [ ] Custom Fields
+- [ ] Custom fields
 - [ ] User
-- [ ] Resource Subscriptions
+- [ ] Resource subscriptions
 - [x] Sales
 - [ ] Subscribers
 - [ ] Licenses
