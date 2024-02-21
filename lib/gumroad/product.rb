@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Gumroad
   # Represents a Product resource from the Gumroad API.
   # For more information, refer to the Gumroad API documentation on Products:

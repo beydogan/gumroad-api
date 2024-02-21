@@ -1,4 +1,7 @@
+# frozen_string_literal: true
+
 module Gumroad
+  # The base class for all Gumroad API resources.
   class Resource < Client
     attr_accessor :success
 

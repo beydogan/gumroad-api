@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Gumroad
   # Represents a Sale resource from the Gumroad API.
   # For more information, refer to the Gumroad API documentation on Products:
@@ -11,7 +13,7 @@ module Gumroad
     #   @option params [String] :product_id (optional) Filter sales by this product ID.
     #   @option params [String] :email (optional) Filter sales by this email.
     #   @option params [String] :order_id (optional) Filter sales by this Order ID.
-    #   @option params [String] :page_key (optional) A key representing a page of results, provided in the response as `next_page_key`.
+    #   @option params [String] :page_key (optional) A key representing a page of results.
     # @return [Array[Array<Product>, String] an array of Sale instances and the next page key as tuple.
     # @return [Message] when the request fails.
     def self.list(params = {})
