@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.gumroad.com/v2/products/YYOJtRpx6JzMljfZrf7ADQ==/enable?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 12:23:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Revision:
+      - f8624244ca43
+      X-Gr:
+      - PROD
+      Set-Cookie:
+      - _mkra_stck=mysql%3A1708518192.2981982; path=/; max-age=10; expires=Wed, 21
+        Feb 2024 12:23:17 GMT; HttpOnly; secure; SameSite=None
+      Etag:
+      - W/"d04911f51404fe3d7b3594d709773b52"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9e780c05-8432-4432-adf8-53c6473cd6b1
+      X-Runtime:
+      - '0.230946'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Content-Security-Policy:
+      - 'default-src https ''self''; child-src * data: blob:; connect-src ''self''
+        blob: www.dropbox.com api.dropboxapi.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/
+        gumroad-public-storage.s3.amazonaws.com gumroad-public-storage.s3.amazonaws.com/
+        s3.amazonaws.com/gumroad-public-storage s3.amazonaws.com/gumroad-public-storage/
+        www.google.com www.gstatic.com *.facebook.com *.facebook.net *.google-analytics.com
+        *.g.doubleclick.net *.googletagmanager.com analytics.google.com *.analytics.google.com
+        files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com
+        *.paypal.com *.braintree-api.com iframe.ly beaconapi.helpscout.net d3hb14vkzrxvla.cloudfront.net
+        app.gumroad.com; font-src * data: blob:; frame-src * data: blob:; img-src
+        * data: blob:; media-src * data: blob:; object-src * data: blob:; script-src
+        ''self'' ''unsafe-eval'' ajax.cloudflare.com static.cloudflareinsights.com
+        js.stripe.com api.stripe.com *.braintreegateway.com *.braintree-api.com www.paypalobjects.com
+        *.paypal.com *.google-analytics.com *.googletagmanager.com optimize.google.com
+        www.googleadservices.com www.google.com www.gstatic.com *.facebook.net *.facebook.com
+        www.dropbox.com s.ytimg.com cdn.iframe.ly platform.twitter.com cdn.jwplayer.com
+        *.jwpcdn.com gumroad.us3.list-manage.com analytics.twitter.com beacon-v2.helpscout.net
+        app.gumroad.com assets.gumroad.com; style-src ''self'' ''unsafe-inline'' s.ytimg.com
+        optimize.google.com fonts.googleapis.com assets.gumroad.com; worker-src *
+        data: blob:'
+      Vary:
+      - Accept, Origin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 858ef56cb8461da6-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"product":{"custom_permalink":null,"name":"Test Product
+        1","preview_url":null,"description":"\u003cp\u003eTest Product 1 Content\u003c/p\u003e","customizable_price":false,"require_shipping":false,"custom_receipt":"","subscription_duration":null,"id":"YYOJtRpx6JzMljfZrf7ADQ==","url":null,"price":500,"currency":"usd","short_url":"https://mbeydogan.gumroad.com/l/ntnit","thumbnail_url":null,"tags":[],"formatted_price":"$7","published":true,"file_info":{},"max_purchase_count":null,"deleted":false,"custom_fields":[],"custom_summary":"The
+        amazing product","is_tiered_membership":false,"recurrences":null,"variants":[{"title":"","options":[{"name":"Test
+        Product 1-A","price_difference":200,"is_pay_what_you_want":false,"recurrence_prices":null,"url":null},{"name":"Test
+        Product 1-B","price_difference":300,"is_pay_what_you_want":false,"recurrence_prices":null,"url":null}]}],"custom_delivery_url":null,"sales_count":0,"sales_usd_cents":0.0}}'
+  recorded_at: Wed, 21 Feb 2024 12:23:07 GMT
+recorded_with: VCR 6.2.0

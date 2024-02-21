@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.gumroad.com/v2/products/YYOJtRpx6JzMljfZrf7ADQ==?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 12:23:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Revision:
+      - f8624244ca43
+      X-Gr:
+      - PROD
+      Set-Cookie:
+      - _gumroad_app_session=TeHppdd8IvvX0BhY6LVCha%2FxTzVjHZt73DFkPNS3xaPE3DT1sFEsojJZzdsERmvVGoktGMfONOWHM6OhQzzvVL99IMx8fJGS1lTmD1NVMEyFuKDyXMMjcWXVqeAXfH14kemjNxJuTvezH%2BfM2G7Y%2BoDfkicQsuv67l68irPW0FHfQpBtSBjPw5jD31C07R%2FAPMKdoJ9ZZHdLaSsgqyQ15F7bjwHp50nO6OZs%2Bb9LCemrqt1vmUBjh5sz0lmX99z6N6AidwWlIQAeG1f%2B62vWHbzObSzy0R3h7T6H7Yu7wyY3YrAgh%2BqsFNrZKKT1kiSnYhtabbyppRq50CFRx4dtK0NTD%2F07X35FlZLCo8Bqx%2FrtYQ%2F5XoEzR%2BGQ--vAfIV6leecNUhGxE--lY4z8dCPXgeJPB%2FYWNIlMw%3D%3D;
+        domain=.gumroad.com; path=/; expires=Tue, 21 Feb 2034 12:23:06 GMT; secure;
+        HttpOnly; SameSite=Lax
+      - _gumroad_guid=b2fe378a-eee1-48c1-8300-b29165f6e5c5; domain=.gumroad.com; path=/;
+        expires=Tue, 21 Feb 2034 12:23:06 GMT; HttpOnly; SameSite=Lax; secure
+      - _mkra_stck=mysql%3A1708518191.6239789; path=/; max-age=10; expires=Wed, 21
+        Feb 2024 12:23:16 GMT; HttpOnly; secure; SameSite=None
+      Etag:
+      - W/"b7f19f8d1fff935c32b49390bc88c7d7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3dcadfed-458f-4ee2-8b72-7ab8b425d25d
+      X-Runtime:
+      - '0.108222'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Content-Security-Policy:
+      - 'default-src https ''self''; child-src * data: blob:; connect-src ''self''
+        blob: www.dropbox.com api.dropboxapi.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/
+        gumroad-public-storage.s3.amazonaws.com gumroad-public-storage.s3.amazonaws.com/
+        s3.amazonaws.com/gumroad-public-storage s3.amazonaws.com/gumroad-public-storage/
+        www.google.com www.gstatic.com *.facebook.com *.facebook.net *.google-analytics.com
+        *.g.doubleclick.net *.googletagmanager.com analytics.google.com *.analytics.google.com
+        files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com
+        *.paypal.com *.braintree-api.com iframe.ly beaconapi.helpscout.net d3hb14vkzrxvla.cloudfront.net
+        app.gumroad.com; font-src * data: blob:; frame-src * data: blob:; img-src
+        * data: blob:; media-src * data: blob:; object-src * data: blob:; script-src
+        ''self'' ''unsafe-eval'' ajax.cloudflare.com static.cloudflareinsights.com
+        js.stripe.com api.stripe.com *.braintreegateway.com *.braintree-api.com www.paypalobjects.com
+        *.paypal.com *.google-analytics.com *.googletagmanager.com optimize.google.com
+        www.googleadservices.com www.google.com www.gstatic.com *.facebook.net *.facebook.com
+        www.dropbox.com s.ytimg.com cdn.iframe.ly platform.twitter.com cdn.jwplayer.com
+        *.jwpcdn.com gumroad.us3.list-manage.com analytics.twitter.com beacon-v2.helpscout.net
+        app.gumroad.com assets.gumroad.com; style-src ''self'' ''unsafe-inline'' s.ytimg.com
+        optimize.google.com fonts.googleapis.com assets.gumroad.com; worker-src *
+        data: blob:'
+      Vary:
+      - Accept, Origin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 858ef567ae0f65c8-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":true,"product":{"name":"Test Product 1","preview_url":null,"description":"\u003cp\u003eTest
+        Product 1 Content\u003c/p\u003e","customizable_price":false,"require_shipping":false,"custom_receipt":"","custom_permalink":null,"subscription_duration":null,"id":"YYOJtRpx6JzMljfZrf7ADQ==","url":null,"price":500,"currency":"usd","short_url":"https://mbeydogan.gumroad.com/l/ntnit","thumbnail_url":null,"tags":[],"formatted_price":"$7","published":false,"file_info":{},"max_purchase_count":null,"deleted":false,"custom_fields":[],"custom_summary":"The
+        amazing product","is_tiered_membership":false,"recurrences":null,"variants":[{"title":"","options":[{"name":"Test
+        Product 1-A","price_difference":200,"is_pay_what_you_want":false,"recurrence_prices":null,"url":null},{"name":"Test
+        Product 1-B","price_difference":300,"is_pay_what_you_want":false,"recurrence_prices":null,"url":null}]}],"custom_delivery_url":null,"sales_count":0,"sales_usd_cents":0.0}}'
+  recorded_at: Wed, 21 Feb 2024 12:23:06 GMT
+recorded_with: VCR 6.2.0
