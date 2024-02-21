@@ -1,0 +1,155 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.gumroad.com/v2/sales/123/mark_as_shipped?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: tracking_url=https%3A%2F%2Fexample.com
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 13:58:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Revision:
+      - c6917f8fed20
+      X-Gr:
+      - PROD
+      Set-Cookie:
+      - _mkra_stck=mysql%3A1708523932.1707404; path=/; max-age=10; expires=Wed, 21
+        Feb 2024 13:58:57 GMT; HttpOnly; secure; SameSite=None
+      Etag:
+      - W/"d8c26e83832884a6558d1b9206d0d881"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 78ad5aa0-91c3-463d-87ad-78c65975416e
+      X-Runtime:
+      - '0.008002'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Content-Security-Policy:
+      - 'default-src https ''self''; child-src * data: blob:; connect-src ''self''
+        blob: www.dropbox.com api.dropboxapi.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/
+        gumroad-public-storage.s3.amazonaws.com gumroad-public-storage.s3.amazonaws.com/
+        s3.amazonaws.com/gumroad-public-storage s3.amazonaws.com/gumroad-public-storage/
+        www.google.com www.gstatic.com *.facebook.com *.facebook.net *.google-analytics.com
+        *.g.doubleclick.net *.googletagmanager.com analytics.google.com *.analytics.google.com
+        files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com
+        *.paypal.com *.braintree-api.com iframe.ly beaconapi.helpscout.net d3hb14vkzrxvla.cloudfront.net
+        app.gumroad.com; font-src * data: blob:; frame-src * data: blob:; img-src
+        * data: blob:; media-src * data: blob:; object-src * data: blob:; script-src
+        ''self'' ''unsafe-eval'' ajax.cloudflare.com static.cloudflareinsights.com
+        js.stripe.com api.stripe.com *.braintreegateway.com *.braintree-api.com www.paypalobjects.com
+        *.paypal.com *.google-analytics.com *.googletagmanager.com optimize.google.com
+        www.googleadservices.com www.google.com www.gstatic.com *.facebook.net *.facebook.com
+        www.dropbox.com s.ytimg.com cdn.iframe.ly platform.twitter.com cdn.jwplayer.com
+        *.jwpcdn.com gumroad.us3.list-manage.com analytics.twitter.com beacon-v2.helpscout.net
+        app.gumroad.com assets.gumroad.com; style-src ''self'' ''unsafe-inline'' s.ytimg.com
+        optimize.google.com fonts.googleapis.com assets.gumroad.com; worker-src *
+        data: blob:'
+      Vary:
+      - Accept, Origin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 858f81905c362be8-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{
+  "success": true,
+  "sale": {
+    "id": "A-m3CDDC5dlrSdKZp0RFhA==",
+    "email": "calvin@gumroad.com",
+    "seller_id": "RkCCaDkPPciPd9155vcaJg==",
+    "timestamp": "about 1 month ago",
+    "daystamp": "23 Jan 2021 12:23 PM",
+    "created_at": "2021-01-23T20:23:21Z",
+    "product_name": "classic physical product",
+    "product_has_variants": true,
+    "price": 2200,
+    "gumroad_fee": 217,
+    "formatted_display_price": "$22",
+    "formatted_total_price": "$22",
+    "currency_symbol": "$",
+    "amount_refundable_in_currency": "22",
+    "product_id": "CCQadnagaqfmKxdHaG5AKQ==",
+    "product_permalink": "KHc",
+    "refunded": false,
+    "partially_refunded": false,
+    "chargedback": false,
+    "purchase_email": "calvin@gumroad.com",
+    "full_name": "Sample Name",
+    "street_address": "Sample street",
+    "city": "New York",
+    "state": "NY",
+    "zip_code": "10001",
+    "country": "United States",
+    "country_iso2": "US",
+    "paid": true,
+    "has_variants": true,
+    "variants": {
+      "Format": "Premium"
+    },
+    "variants_and_quantity": "(Premium)",
+    "has_custom_fields": false,
+    "custom_fields": {},
+    "order_id": 292372715,
+    "is_product_physical": true,
+    "purchaser_id": "6225273416381",
+    "is_recurring_billing": false,
+    "can_contact": true,
+    "is_following": false,
+    "disputed": false,
+    "dispute_won": false,
+    "is_additional_contribution": false,
+    "discover_fee_charged": false,
+    "is_gift_sender_purchase": false,
+    "is_gift_receiver_purchase": false,
+    "referrer": "direct",
+    "card": {
+      "visual": "**** **** **** 4242",
+      "type": "visa"
+    },
+    "product_rating": null,
+    "reviews_count": 0,
+    "average_rating": 0,
+    "shipped": true,
+    "tracking_url": "https://example.com",
+    "license_key": "740A36FE-80134D88-9998290C-1B30910C",
+    "license_id": "mN7CdHiwHaR9FlxKvF-n-g==",
+    "license_disabled": false,
+    "sku_id": "6Oo2MGSSagZU5naeWaDaNQ==",
+    "sku_external_id": "6Oo2MGSS1gaU5a5eWaDaNQ==",
+    "affiliate": {
+      "email": "affiliate@example.com",
+      "amount": "$2.50"
+    },
+    "quantity": 1
+  }
+}'
+  recorded_at: Wed, 21 Feb 2024 13:58:47 GMT
+recorded_with: VCR 6.2.0

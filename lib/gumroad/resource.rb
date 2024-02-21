@@ -1,13 +1,20 @@
 module Gumroad
   class Resource < Client
-    attr_accessor :id, :name, :description, :price, :currency, :url, :thumbnail_url, :custom_fields
+    attr_accessor :success
 
     def initialize(attributes = {})
       super()
 
       attributes.each do |key, value|
+        self.class.send(:attr_accessor, key)
         instance_variable_set("@#{key}", value)
       end
+
+      @success = true
+    end
+
+    def success?
+      success
     end
 
     def self.handle_delete_response(response)
@@ -16,7 +23,7 @@ module Gumroad
       Message.new(response)
     end
 
-    # @return anything
+    # @return [anything]
     def self.handle_resource_response(response)
       if response.success? && response["success"]
         convert_to_resource_object(response)

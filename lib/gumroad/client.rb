@@ -18,6 +18,10 @@ module Gumroad
         instance_variable_set("@#{key}", value)
       end
     end
+
+    def success?
+      success
+    end
   end
 
 

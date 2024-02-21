@@ -29,6 +29,27 @@ products = Gumroad::Product.list
 
 See the [Documentation](docs/index.md) for more details.
 
+# Coverage
+
+Not all endpoints are covered yet. Here is the list of what is covered and what is not:
+
+- [x] Products
+- [ ] Variant Categories
+- [ ] Offer codes
+- [ ] Custom Fields
+- [ ] User
+- [ ] Resource Subscriptions
+- [x] Sales
+- [ ] Subscribers
+- [ ] Licenses
+
+You can use the unimplemented endpoints as:
+
+```ruby
+Gumroad::Client.get('/products/123/subscribers')
+Gumroad::Client.post('/products/123/custom_fields', body: { name: 'field_name', type: 'text' })
+```
+
 # Development
 
 After checking out the repo, run bin/setup to install dependencies. Then, run rake spec to run the tests. You can also run bin/console for an interactive prompt that will allow you to experiment.

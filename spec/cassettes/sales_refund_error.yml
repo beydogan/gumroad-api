@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: https://api.gumroad.com/v2/sales/123/mark_as_shipped?access_token=<ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 21 Feb 2024 14:04:10 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Revision:
+      - c6917f8fed20
+      X-Gr:
+      - PROD
+      Set-Cookie:
+      - _mkra_stck=mysql%3A1708524255.0290155; path=/; max-age=10; expires=Wed, 21
+        Feb 2024 14:04:20 GMT; HttpOnly; secure; SameSite=None
+      Etag:
+      - W/"d8c26e83832884a6558d1b9206d0d881"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c8359cc5-21d6-4512-af51-bd786a6e32a3
+      X-Runtime:
+      - '0.008878'
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Content-Security-Policy:
+      - 'default-src https ''self''; child-src * data: blob:; connect-src ''self''
+        blob: www.dropbox.com api.dropboxapi.com s3.amazonaws.com/gumroad s3.amazonaws.com/gumroad/
+        gumroad-public-storage.s3.amazonaws.com gumroad-public-storage.s3.amazonaws.com/
+        s3.amazonaws.com/gumroad-public-storage s3.amazonaws.com/gumroad-public-storage/
+        www.google.com www.gstatic.com *.facebook.com *.facebook.net *.google-analytics.com
+        *.g.doubleclick.net *.googletagmanager.com analytics.google.com *.analytics.google.com
+        files.gumroad.com/ d1bdh6c3ceakz5.cloudfront.net/ *.braintreegateway.com www.paypalobjects.com
+        *.paypal.com *.braintree-api.com iframe.ly beaconapi.helpscout.net d3hb14vkzrxvla.cloudfront.net
+        app.gumroad.com; font-src * data: blob:; frame-src * data: blob:; img-src
+        * data: blob:; media-src * data: blob:; object-src * data: blob:; script-src
+        ''self'' ''unsafe-eval'' ajax.cloudflare.com static.cloudflareinsights.com
+        js.stripe.com api.stripe.com *.braintreegateway.com *.braintree-api.com www.paypalobjects.com
+        *.paypal.com *.google-analytics.com *.googletagmanager.com optimize.google.com
+        www.googleadservices.com www.google.com www.gstatic.com *.facebook.net *.facebook.com
+        www.dropbox.com s.ytimg.com cdn.iframe.ly platform.twitter.com cdn.jwplayer.com
+        *.jwpcdn.com gumroad.us3.list-manage.com analytics.twitter.com beacon-v2.helpscout.net
+        app.gumroad.com assets.gumroad.com; style-src ''self'' ''unsafe-inline'' s.ytimg.com
+        optimize.google.com fonts.googleapis.com assets.gumroad.com; worker-src *
+        data: blob:'
+      Vary:
+      - Accept, Origin
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 858f89723e162c4f-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"success":false,"message":"The sale was not found."}'
+  recorded_at: Wed, 21 Feb 2024 14:04:10 GMT
+recorded_with: VCR 6.2.0
