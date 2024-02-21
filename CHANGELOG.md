@@ -1,5 +1,4 @@
-## [Unreleased]
+## [0.1.0] - 2024-02-21
 
-## [0.1.0] - 2024-02-20
-
-- Initial release
+- Initial release with basic features
+- Add support for Product and Sale resources

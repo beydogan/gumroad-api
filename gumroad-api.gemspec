@@ -8,13 +8,11 @@ Gem::Specification.new do |spec|
   spec.authors = ["Mehmet Beydogan"]
   spec.email = ["mehmet.beydogan@gmail.com"]
 
-  spec.summary = "Write a short summary, because RubyGems requires one."
-  spec.description = "Write a longer description or delete this line."
+  spec.summary = "Gumroad API client"
+  spec.description = "A simple Ruby client for the Gumroad API."
   spec.homepage = "https://github.com/beydogan/gumroad-api"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
-
-  spec.metadata["allowed_push_host"] = "Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/beydogan/gumroad-api"
