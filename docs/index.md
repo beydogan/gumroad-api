@@ -1,3 +1,3 @@
 ## Usage Documentation
 
-- [Products](docs/products.md)
+- [Products](products.md)
